@@ -1,0 +1,156 @@
+.main {
+    display: flex;
+}
+
+.image_container {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+
+    background-image: url(assets/palms.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 100vh;
+}
+
+.image {
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.logo_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(0, 0, 0, 0.7);
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px;
+}
+
+.odin_logo {
+    height: 10vh;
+}
+
+@font-face {
+    font-family: odinFont;
+    src: url(assets/Norse-Bold.otf);
+}
+
+.odin_text {
+    font-family: odinFont;
+    font-size: 7vh;
+    color: #ffffff;
+}
+
+.content_container {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 60vw;
+    background-color: #f9fafb;
+}
+
+.text {
+    padding: 15px;
+    background-color: #f9fafb;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    size: 1.2rem;
+    font-weight: bolder;
+}
+
+.form_container {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 15px;
+    gap: 20px;
+    background-color: #ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    size: 1.2rem;
+    font-weight: bolder;
+
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.form_header {
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 40%;
+}
+
+.form {
+    border: 2px solid #E5E7EB;
+    border-radius: 4px;
+    height: 1.4rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    size: 1.2rem;
+    font-weight: bolder;
+    padding: 4px;
+}
+
+.form:focus {
+    outline: none;
+    border: 2px solid #4a6fd6;
+}
+
+.form:focus:invalid {
+    outline: none;
+    border: 2px solid red;
+}
+
+.log_in {
+    padding: 15px;
+    background-color: #f9fafb;
+}
+
+.create_account{
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: bolder;
+
+    background-color: #596D48;
+    padding: 14px 40px;
+    border-radius: 8px;
+    
+}
+
+.create_account:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+a:link {
+    color: #596D48;
+}
+
+a:visited {
+    color: #596D48;
+}
+
+p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    size: 1.2rem;
+    font-weight: bolder;
+}
